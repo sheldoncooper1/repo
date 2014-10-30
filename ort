@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+ {
+float avg=0,sum=0,M,N;
+int i,j;
+float ort=0,x,y=0;
+scanf("%f %f",&M,&N);
+for(i=1;i<=M;i++)
+       {
+   for(j=1;j<=N;j++)
+   {
+     scanf("%f\n",&x);
+           sum+=x;
+   }
+                        ort=sum/N;
+                                   y+=ort;
+                             printf("customer%d :%f\n",i,ort);
+                   sum=0;
+       }
+      avg=y/M;
+                                     printf("avg: %f\n",avg);
+                      return 0;
+ }
